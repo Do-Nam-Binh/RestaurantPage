@@ -48,6 +48,17 @@ body {
   color: gray;
   font-family: "Rockgen";
   font-weight: bolder;
+  display: grid;
+  justify-content: center;
+}
+
+.menuItem {
+  font-family: "Rockgen";
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  display: grid;
+  justify-content: stretch;
 }
 
 .description {

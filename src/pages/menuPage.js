@@ -9,18 +9,45 @@ function menuPage() {
   appetizers.innerHTML = "Appetizers";
   appetizers.classList.add("subHeader");
 
-  const mainCourse = document.createElement("div");
+  const mainCourse = appetizers.cloneNode(true);
   mainCourse.innerHTML = "Main Course";
-  mainCourse.classList.add("subHeader");
 
-  const desserts = document.createElement("div");
+  const desserts = appetizers.cloneNode(true);
   desserts.innerHTML = "Desserts";
-  desserts.classList.add("subHeader");
+
+  //Appetizers
+  const appetizers1 = document.createElement("div");
+  appetizers1.classList.add("menuItem");
+  appetizers1.textContent = "Slate Sliders";
+
+  const appetizers2 = appetizers1.cloneNode(true);
+  appetizers2.textContent = "Marble Medley Salad";
+
+  const mainCourse1 = appetizers1.cloneNode(true);
+  mainCourse1.textContent = "Granite-Grilled Salmon";
+
+  const mainCourse2 = appetizers1.cloneNode(true);
+  mainCourse2.textContent = "Basalt-Baked Chicken";
+
+  const dessert1 = appetizers1.cloneNode(true);
+  dessert1.textContent = "Quartz Creme Brulee";
+
+  const dessert2 = appetizers1.cloneNode(true);
+  mainCourse2.textContent = "Lava Chocolate Fondue";
 
   contentDiv.appendChild(headLine);
+
   contentDiv.appendChild(appetizers);
+  contentDiv.appendChild(appetizers1);
+  contentDiv.appendChild(appetizers2);
+
   contentDiv.appendChild(mainCourse);
+  contentDiv.appendChild(mainCourse1);
+  contentDiv.appendChild(mainCourse2);
+
   contentDiv.appendChild(desserts);
+  contentDiv.appendChild(dessert1);
+  contentDiv.appendChild(dessert2);
 }
 
 export default menuPage;
