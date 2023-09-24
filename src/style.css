@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/6728da52e0ca5c59fa341023ef1b7d9f?family=Rockgen);
+
 * {
   padding: 0;
   margin: 0;
@@ -5,13 +7,21 @@
 
 body {
   display: grid;
-  justify-content: center;
+  justify-content: stretch;
+  padding: 0px 10%;
+}
+
+#content {
+  border-radius: 5px;
+  background-color: rgba(173, 216, 230, 0.4);
 }
 
 #content div {
   display: grid;
   align-items: center;
   justify-content: center;
+  margin: 30px 20px;
+  font-family: "Rockgen";
 }
 
 .nav-bar {
@@ -27,10 +37,24 @@ body {
 }
 
 .header {
-  font-size: 20px;
-  color: coral;
+  font-size: 45px;
+  color: gray;
+  font-family: "Rockgen";
+  font-weight: bolder;
+}
+
+.subHeader {
+  font-size: 30px;
+  color: gray;
+  font-family: "Rockgen";
+  font-weight: bolder;
 }
 
 .description {
-  width: 500px;
+  padding: 10px;
+  background: url("./images/stoneBackground.png");
+  opacity: 0.8;
+  border-radius: 10px;
+  color: black;
+  font-size: 25px;
 }

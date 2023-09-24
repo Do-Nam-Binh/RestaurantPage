@@ -3,6 +3,8 @@ import menuPage from "./pages/menuPage";
 import contactPage from "./pages/contactPage";
 import "./style.css";
 
+homePage();
+
 const homeBtn = document.querySelector(".home");
 const menuBtn = document.querySelector(".menu");
 const contactBtn = document.querySelector(".contact");

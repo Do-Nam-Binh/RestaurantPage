@@ -2,13 +2,13 @@ function homePage() {
   const contentDiv = document.querySelector("#content");
   contentDiv.textContent = "";
   const headLine = document.createElement("div");
-  headLine.innerHTML = "Come see the taste of our family recipe!";
+  headLine.innerHTML = "The Stone Plate Cafe";
   headLine.classList.add("header");
 
   const description = document.createElement("div");
   description.classList.add("description");
   description.innerHTML =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    "Tucked away in a serene corner of nature, The Stone Plate cate is a truly unique culinary destination that celebrates the beauty of simplicity of the natural world. Our restaurant is unlike any other, as we exclusively serve dishes inspired by the raw elegance of Earth's very foundation - rocks. At The Stone Plate Cafe, you'll embark on a gastronomic journey that reconnects you with the fundamental elements of our planet.";
 
   contentDiv.appendChild(headLine);
   contentDiv.appendChild(description);
