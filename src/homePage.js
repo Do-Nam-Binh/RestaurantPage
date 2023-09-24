@@ -1,5 +1,6 @@
-export default function homePage() {
+function homePage() {
   const contentDiv = document.querySelector("#content");
+  contentDiv.textContent = "";
   const headLine = document.createElement("div");
   headLine.innerHTML = "Come see the taste of our family recipe!";
 
@@ -10,3 +11,5 @@ export default function homePage() {
   contentDiv.appendChild(headLine);
   contentDiv.appendChild(description);
 }
+
+export default homePage;
