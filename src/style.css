@@ -72,10 +72,34 @@ body {
 }
 
 .description {
-  padding: 10px;
-  background: url("./pages/images/stoneBackground.png");
-  opacity: 0.8;
+  padding: 15px 30px;
+  /* background: url("./pages/images/stoneBackground.png"); */
+  background-color: rgba(180, 170, 170, 0.4);
   border-radius: 10px;
-  color: black;
+  color: rgb(101, 82, 82);
   font-size: 25px;
+  font-weight: bold;
+}
+
+.contactDetails {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  font-size: 30px;
+  color: gray;
+  justify-items: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.contactDetails img {
+  max-width: 90%;
+  justify-self: start;
+  border-radius: 20px;
+}
+
+.phoneNumber {
+  font-size: 30px;
+  color: gray;
+  font-weight: 600;
 }
