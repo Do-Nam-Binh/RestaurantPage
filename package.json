@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/Do-Nam-Binh/RestaurantPage.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.0.0",
     "style-loader": "^3.3.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.2",
